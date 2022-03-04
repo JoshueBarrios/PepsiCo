@@ -1,0 +1,801 @@
+/* Variables */
+$color-blanco: #fff;
+$color-negro: #000;
+$color-azul-pepsi: #004b93;
+$color-azul2-pepsi: #005cb4;
+$color-rojo-pepsi: #c9002b;
+$sombreado-nombres-productos: drop-shadow(0 0 0.2rem $color-azul-pepsi);
+$sombreado-slogan: drop-shadow(0 0 0.06rem $color-negro);
+$sombreado-logo-header-scroll: drop-shadow(0 0 0.3rem $color-rojo-pepsi);
+
+/* Primera seccion */
+.first-section {
+  background-image: url("/img/338744-pepsi-wallpaper-pepsi-emoji-wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: end;
+  width: 100%;
+  height: 100vh;
+
+  p {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 2px;
+    margin: 0 0.5rem;
+
+    h2,
+    h3 {
+      font-style: italic;
+      font-weight: 900;
+      font-size: 2rem;
+      background: rgb(255, 255, 255);
+      position: relative;
+      background: linear-gradient(to top, #021a4c 30%, #6f7df5 65%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: $sombreado-slogan;
+    }
+  }
+}
+
+/* Segunda seccion */
+#second-section {
+  h3 {
+    text-align: center;
+    margin: 20px 0 7px;
+    font-family: "Kanit", sans-serif;
+    color: $color-blanco;
+    filter: drop-shadow(0.4rem -0.2rem $color-azul-pepsi);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  .carrusel {
+    margin: 5px 0 25px;
+
+    .carrusel-container {
+      position: relative;
+
+      .carrusel-left,
+      .carrusel-right {
+        z-index: 1;
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: none;
+        top: 50%;
+        cursor: pointer;
+        line-height: 40px;
+        background: $color-blanco;
+        color: $color-rojo-pepsi;
+        border-radius: 50%;
+        opacity: 0.7;
+        transition: all 0.35s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .carrusel-left {
+        left: 30px;
+      }
+
+      .carrusel-right {
+        right: 30px;
+      }
+
+      .carrusel-item {
+        display: flex;
+        flex-direction: column;
+
+        img {
+          width: 200px;
+          margin: 0 auto;
+          padding: 20px;
+          filter: drop-shadow(0 0 0.3rem $color-blanco);
+        }
+
+        .product-name-carrusel {
+          text-align: center;
+          font-family: "Kanit", sans-serif;
+          font-size: 1.6rem;
+          font-weight: 600;
+          font-style: italic;
+          color: $color-blanco;
+          filter: drop-shadow(0 0 0.2rem $color-negro);
+          text-transform: uppercase;
+        }
+
+        .product-price-carrusel {
+          text-align: center;
+          font-family: "Kanit", sans-serif;
+          text-transform: uppercase;
+          font-style: italic;
+          font-weight: 700;
+          font-size: 1.5rem;
+          color: $color-blanco;
+          filter: drop-shadow(0 0 0.2rem $color-azul2-pepsi);
+        }
+
+        .btn-carrusel {
+          background-color: $color-blanco;
+          width: 140px;
+          height: 40px;
+          align-self: center;
+          margin: 20px 0;
+          border-radius: 25px 0 25px 0;
+          filter: drop-shadow(0 0 0.35rem $color-rojo-pepsi);
+          font-family: "Kanit", sans-serif;
+          text-decoration: none;
+          color: $color-negro;
+          font-size: 1rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          transition: 0.3s;
+
+          &:hover {
+            background-color: #24fc02;
+          }
+        }
+      }
+
+      .carrusel-item:nth-child(1) {
+        background: linear-gradient(#0065c3, #000);
+      }
+
+      .carrusel-item:nth-child(2) {
+        background: linear-gradient(#878787, #000);
+      }
+      .carrusel-item:nth-child(3) {
+        background: linear-gradient(#ff8f1c, #000);
+      }
+      .carrusel-item:nth-child(4) {
+        background: linear-gradient(#878787, #000);
+      }
+      .carrusel-item:nth-child(5) {
+        background: linear-gradient(#0065c3, #000);
+      }
+      .carrusel-item:nth-child(6) {
+        background: linear-gradient(#bebebe, #000);
+      }
+    }
+
+    .carrusel-indicators {
+      .glider-dot {
+        background: $color-blanco;
+      }
+      .glider-dot.active {
+        background: $color-rojo-pepsi;
+      }
+    }
+  }
+}
+
+/* Tercera seccion */
+.third-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/405420-free-download-retro-pepsi-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Cuarta seccion */
+#fourth-section {
+  padding: 6rem 0 4rem;
+
+  .card {
+    transition: all 0.6s ease-in;
+  }
+
+  .btns-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.6rem;
+
+    .btns {
+      width: 30rem;
+      height: 3.5rem;
+      border-radius: 20px;
+      background-color: $color-blanco;
+      color: $color-negro;
+      font-size: 1.3rem;
+      font-weight: 700;
+      font-family: "Kanit", sans-serif;
+      text-transform: uppercase;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $color-azul2-pepsi;
+        color: $color-blanco;
+      }
+    }
+
+    /* Background btns de filtrado */
+    .btn-filter-active {
+      background-color: $color-azul-pepsi;
+      color: $color-blanco;
+    }
+  }
+
+  .img-drinks {
+    width: 170px;
+    margin: 0 auto;
+    padding: 0.65rem;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.1) translateY(-35px);
+    }
+  }
+
+  .img-foods {
+    width: 265px;
+    margin: 0 auto;
+    padding: 0.65rem;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.2) translateY(-65px);
+    }
+  }
+
+  .product-name-card {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .btns-container-details {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-drinks,
+  .btn-foods {
+    margin-top: 9px;
+    width: 8rem;
+    height: 2.5rem;
+    background-color: $color-negro;
+    border-radius: 20px;
+    transform: translateY(4px) rotateX(90deg);
+    transition: all 0.3s;
+  }
+
+  .btn-details {
+    font-family: "Kanit", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    color: $color-blanco;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-blanco;
+    }
+  }
+
+  /* Modal */
+  .modal-container-drink,
+  .modal-container-food {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modal-drink {
+      width: 70%;
+      height: 70%;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      transition: transform 1s;
+      transform: translatey(0);
+      border-radius: 0.8rem;
+    }
+
+    .modal-food {
+      width: 65%;
+      height: 65%;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      transition: transform 1s;
+      transform: translatey(0);
+      border-radius: 0.8rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      .modal-drink,
+      .modal-food {
+        width: 100%;
+        height: 90%;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      .modal-drink,
+      .modal-food {
+        width: 75%;
+      }
+    }
+
+    .modal-close-drink,
+    .modal-close-food {
+      transform: translateY(-200%);
+    }
+
+    .close-drink,
+    .close-food {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      display: inline-block;
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: $color-negro;
+      line-height: 1.2rem;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 50%;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $color-rojo-pepsi;
+      }
+    }
+
+    .modal-drink img {
+      width: 185px;
+      margin: auto 20px;
+    }
+
+    .modal-food img {
+      width: 280px;
+      margin: auto 0;
+    }
+
+    .modal-drink-texts,
+    .modal-food-texts {
+      display: flex;
+      flex-direction: column;
+      margin: auto 0;
+
+      .drink-name,
+      .food-name,
+      h3,
+      h4 {
+        font-family: "Kanit", sans-serif;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .drink-description,
+      .food-description,
+      p {
+        font-family: "Kanit", sans-serif;
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-align: left;
+        color: $color-azul-pepsi;
+      }
+
+      .drink-price,
+      .food-price {
+        color: $color-rojo-pepsi;
+        text-align: center;
+        font-weight: 900;
+        font-size: 1.7rem;
+        margin: 0;
+      }
+
+      .buy-product-drink,
+      .buy-product-food {
+        font-family: "Kanit", sans-serif;
+        text-transform: uppercase;
+        margin: 10px 30px 0;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        background-color: $color-negro;
+        color: $color-rojo-pepsi;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #3fff22;
+        }
+      }
+    }
+    /* Responsive */
+    @media (min-width: 320px) and (max-width: 768px) {
+      .modal-drink img {
+        width: 110px;
+        margin: auto 15px;
+      }
+
+      .modal-food img {
+        width: 165px;
+        margin: auto 0;
+      }
+
+      .modal-drink-texts,
+      .modal-food-texts {
+        .drink-name,
+        .food-name,
+        h3,
+        h4 {
+          font-size: 1.1rem;
+          font-weight: 800;
+        }
+
+        .drink-price,
+        .food-price {
+          font-size: 1.2rem;
+        }
+
+        .buy-product-drink,
+        .buy-product-food {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    /* Responsive */
+  }
+}
+
+/* Color del background al hacer hover (hecho desde js) */
+/* Bebidas */
+.color-fondo1:hover {
+  transition: all 0.35s;
+  background-color: $color-azul-pepsi;
+}
+
+.color-fondo2:hover {
+  transition: all 0.35s;
+  background-color: $color-negro;
+}
+
+.color-fondo3:hover {
+  transition: all 0.35s;
+  background-color: #878787;
+}
+
+.color-fondo4:hover {
+  transition: all 0.35s;
+  background-color: #ff8f1c;
+}
+
+.color-fondo5:hover {
+  transition: all 0.35s;
+  background-color: #ff8000;
+}
+
+.color-fondo6:hover {
+  transition: all 0.35s;
+  background-color: #c5142f;
+}
+
+.color-fondo7:hover {
+  transition: all 0.35s;
+  background-color: #1eff00;
+}
+
+.color-fondo8:hover {
+  transition: all 0.35s;
+  background-color: #d02476fa;
+}
+
+.color-fondo9:hover {
+  transition: all 0.35s;
+  background-color: #0065c3;
+}
+
+.color-fondo10:hover {
+  transition: all 0.35s;
+  background-color: #bb9339;
+}
+
+.color-fondo11:hover {
+  transition: all 0.35s;
+  background-color: #bebebe;
+}
+
+/* Comidas */
+
+.color-fondo-comida1:hover {
+  transition: all 0.35s;
+  background-color: #d21e29;
+}
+
+.color-fondo-comida2:hover {
+  transition: all 0.35s;
+  background-color: #ec6e12;
+}
+
+.color-fondo-comida3:hover {
+  transition: all 0.35s;
+  background-color: #e35111;
+}
+
+.color-fondo-comida4:hover {
+  transition: all 0.35s;
+  background-color: #6ea5be;
+}
+
+.color-fondo-comida5:hover {
+  transition: all 0.35s;
+  background-color: #5b002e;
+}
+
+.color-fondo-comida6:hover {
+  transition: all 0.35s;
+  background-color: #745036;
+}
+
+.color-fondo-comida7:hover {
+  transition: all 0.35s;
+  background-color: #e3c4ab;
+}
+
+.color-fondo-comida8:hover {
+  transition: all 0.35s;
+  background-color: #cf0619;
+}
+
+.color-fondo-comida9:hover {
+  transition: all 0.35s;
+  background-color: #898787;
+}
+
+/* Offcanvas carrito */
+
+.offcanvas {
+  background-color: $color-negro;
+
+  .offcanvas-header {
+    background-color: $color-azul-pepsi;
+    border-bottom: 1px solid $color-blanco;
+
+    .cart-title {
+      color: $color-blanco;
+      margin: 0 auto;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+
+  .offcanvas-body {
+    .empty-cart {
+      display: flex;
+      justify-content: center;
+      margin: 220px 0;
+      h4 {
+        color: $color-rojo-pepsi;
+      }
+    }
+
+    .product-push {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid $color-blanco;
+      padding-bottom: 7px;
+
+      .product-cart-img {
+        width: 70px;
+      }
+
+      .product-cart-text {
+        align-items: center;
+
+        .product-cart-name {
+          text-align: center;
+          color: $color-blanco;
+          font-weight: 800;
+        }
+
+        .product-cart-price {
+          color: $color-blanco;
+          text-align: center;
+          font-weight: 800;
+        }
+
+        .product-interaction {
+          display: flex;
+          justify-content: space-around;
+          align-items: baseline;
+
+          .more {
+            color: $color-azul2-pepsi;
+          }
+
+          .product-quantity {
+            color: #fff;
+          }
+
+          .minus {
+            color: $color-azul2-pepsi;
+          }
+        }
+
+        .eliminate-product {
+          font-family: "Kanit", sans-serif;
+          color: $color-blanco;
+        }
+      }
+    }
+  }
+
+  .container-totals {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 10px 0;
+    color: $color-blanco;
+    border-top: 1px solid black;
+
+    p {
+      color: $color-blanco;
+      border: 1px solid $color-blanco;
+      padding: 6px;
+      font-weight: 500;
+
+      .total-products,
+      .total-price {
+        font-weight: 700;
+        color: $color-blanco;
+      }
+    }
+  }
+
+  .container-buttons {
+    display: flex;
+
+    .reset-cart {
+      margin: 0 auto;
+      color: $color-blanco;
+      background: $color-azul-pepsi;
+      width: 10rem;
+      height: 2rem;
+      border-radius: 8px;
+      margin-bottom: 7px;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $color-rojo-pepsi;
+      }
+    }
+
+    .finish-buy {
+      margin: 0 auto;
+      color: $color-blanco;
+      background: $color-azul-pepsi;
+      width: 10rem;
+      height: 2rem;
+      border-radius: 8px;
+      margin-bottom: 7px;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #29bf12;
+      }
+    }
+  }
+}
+
+/* Formulario de compra */
+#first-section-form {
+  background: linear-gradient(rgba(49, 54, 53, 0.4), rgba(34, 34, 71, 0.6)),
+    url(/img/fondo-formulario.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  padding: 130px 0 50px;
+  font-family: "Kanit", sans-serif;
+
+  .fondo-formulario {
+    background-color: $color-negro;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 7px;
+
+    h2 {
+      text-transform: uppercase;
+      color: $color-rojo-pepsi;
+    }
+
+    input {
+      border-radius: 4px;
+    }
+
+    select {
+      width: 225px;
+      border-radius: 3px;
+    }
+
+    .buy {
+      background-color: $color-azul-pepsi;
+      color: $color-blanco;
+      width: 220px;
+      height: 40px;
+      border-radius: 4px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #29bf12;
+      }
+    }
+  }
+}
+/* Responsive*/
+@media (max-width: 768px) {
+  .first-section {
+    p {
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      h2,
+      h3 {
+        font-size: 1.5rem;
+        background: linear-gradient(to top, #050823 10%, #d20c1c 91%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+/* Preloader */
+.loader {
+  background: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.logo-efect {
+  animation: rotate 0.6s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}

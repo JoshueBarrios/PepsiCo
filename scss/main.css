@@ -1,0 +1,1006 @@
+/* Variables */
+/* Primera seccion */
+.first-section {
+  background-image: url("/img/338744-pepsi-wallpaper-pepsi-emoji-wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 100%;
+  height: 100vh;
+}
+
+.first-section p {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 2px;
+  margin: 0 0.5rem;
+}
+
+.first-section p h2,
+.first-section p h3 {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 2rem;
+  background: white;
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #021a4c), color-stop(65%, #6f7df5));
+  background: linear-gradient(to top, #021a4c 30%, #6f7df5 65%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(0 0 0.06rem #000);
+          filter: drop-shadow(0 0 0.06rem #000);
+}
+
+/* Segunda seccion */
+#second-section h3 {
+  text-align: center;
+  margin: 20px 0 7px;
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+  -webkit-filter: drop-shadow(0.4rem -0.2rem #004b93);
+          filter: drop-shadow(0.4rem -0.2rem #004b93);
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+#second-section .carrusel {
+  margin: 5px 0 25px;
+}
+
+#second-section .carrusel .carrusel-container {
+  position: relative;
+}
+
+#second-section .carrusel .carrusel-container .carrusel-left,
+#second-section .carrusel .carrusel-container .carrusel-right {
+  z-index: 1;
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  top: 50%;
+  cursor: pointer;
+  line-height: 40px;
+  background: #fff;
+  color: #c9002b;
+  border-radius: 50%;
+  opacity: 0.7;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+#second-section .carrusel .carrusel-container .carrusel-left:hover,
+#second-section .carrusel .carrusel-container .carrusel-right:hover {
+  opacity: 1;
+}
+
+#second-section .carrusel .carrusel-container .carrusel-left {
+  left: 30px;
+}
+
+#second-section .carrusel .carrusel-container .carrusel-right {
+  right: 30px;
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item img {
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  -webkit-filter: drop-shadow(0 0 0.3rem #fff);
+          filter: drop-shadow(0 0 0.3rem #fff);
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item .product-name-carrusel {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff;
+  -webkit-filter: drop-shadow(0 0 0.2rem #000);
+          filter: drop-shadow(0 0 0.2rem #000);
+  text-transform: uppercase;
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item .product-price-carrusel {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  -webkit-filter: drop-shadow(0 0 0.2rem #005cb4);
+          filter: drop-shadow(0 0 0.2rem #005cb4);
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item .btn-carrusel {
+  background-color: #fff;
+  width: 140px;
+  height: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0;
+  border-radius: 25px 0 25px 0;
+  -webkit-filter: drop-shadow(0 0 0.35rem #c9002b);
+          filter: drop-shadow(0 0 0.35rem #c9002b);
+  font-family: "Kanit", sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item .btn-carrusel:hover {
+  background-color: #29bf12;
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0065c3), to(#000));
+  background: linear-gradient(#0065c3, #000);
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item:nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#878787), to(#000));
+  background: linear-gradient(#878787, #000);
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item:nth-child(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8f1c), to(#000));
+  background: linear-gradient(#ff8f1c, #000);
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item:nth-child(4) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#878787), to(#000));
+  background: linear-gradient(#878787, #000);
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item:nth-child(5) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0065c3), to(#000));
+  background: linear-gradient(#0065c3, #000);
+}
+
+#second-section .carrusel .carrusel-container .carrusel-item:nth-child(6) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bebebe), to(#000));
+  background: linear-gradient(#bebebe, #000);
+}
+
+#second-section .carrusel .carrusel-indicators .glider-dot {
+  background: #fff;
+}
+
+#second-section .carrusel .carrusel-indicators .glider-dot.active {
+  background: #c9002b;
+}
+
+/* Tercera seccion */
+.third-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/405420-free-download-retro-pepsi-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Cuarta seccion */
+#fourth-section {
+  padding: 6rem 0 4rem;
+  /* Modal */
+}
+
+#fourth-section .card {
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+}
+
+#fourth-section .btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 1.6rem;
+  /* Background btns de filtrado */
+}
+
+#fourth-section .btns-container .btns {
+  width: 30rem;
+  height: 3.5rem;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#fourth-section .btns-container .btns:hover {
+  background-color: #005cb4;
+  color: #fff;
+}
+
+#fourth-section .btns-container .btn-filter-active {
+  background-color: #004b93;
+  color: #fff;
+}
+
+#fourth-section .img-drinks {
+  width: 170px;
+  margin: 0 auto;
+  padding: 0.65rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#fourth-section .img-drinks:hover {
+  -webkit-transform: scale(1.1) translateY(-35px);
+          transform: scale(1.1) translateY(-35px);
+}
+
+#fourth-section .img-foods {
+  width: 265px;
+  margin: 0 auto;
+  padding: 0.65rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#fourth-section .img-foods:hover {
+  -webkit-transform: scale(1.2) translateY(-65px);
+          transform: scale(1.2) translateY(-65px);
+}
+
+#fourth-section .product-name-card {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+}
+
+#fourth-section .btns-container-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#fourth-section .btn-drinks,
+#fourth-section .btn-foods {
+  margin-top: 9px;
+  width: 8rem;
+  height: 2.5rem;
+  background-color: #000;
+  border-radius: 20px;
+  -webkit-transform: translateY(4px) rotateX(90deg);
+          transform: translateY(4px) rotateX(90deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#fourth-section .btn-details {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#fourth-section .btn-details:hover {
+  color: #fff;
+}
+
+#fourth-section .modal-container-drink,
+#fourth-section .modal-container-food {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Responsive */
+  /* Responsive */
+}
+
+#fourth-section .modal-container-drink .modal-drink,
+#fourth-section .modal-container-food .modal-drink {
+  width: 70%;
+  height: 70%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
+  border-radius: 0.8rem;
+}
+
+#fourth-section .modal-container-drink .modal-food,
+#fourth-section .modal-container-food .modal-food {
+  width: 65%;
+  height: 65%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
+  border-radius: 0.8rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  #fourth-section .modal-container-drink .modal-drink,
+  #fourth-section .modal-container-drink .modal-food,
+  #fourth-section .modal-container-food .modal-drink,
+  #fourth-section .modal-container-food .modal-food {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #fourth-section .modal-container-drink .modal-drink,
+  #fourth-section .modal-container-drink .modal-food,
+  #fourth-section .modal-container-food .modal-drink,
+  #fourth-section .modal-container-food .modal-food {
+    width: 75%;
+  }
+}
+
+#fourth-section .modal-container-drink .modal-close-drink,
+#fourth-section .modal-container-drink .modal-close-food,
+#fourth-section .modal-container-food .modal-close-drink,
+#fourth-section .modal-container-food .modal-close-food {
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+}
+
+#fourth-section .modal-container-drink .close-drink,
+#fourth-section .modal-container-drink .close-food,
+#fourth-section .modal-container-food .close-drink,
+#fourth-section .modal-container-food .close-food {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #000;
+  line-height: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#fourth-section .modal-container-drink .close-drink:hover,
+#fourth-section .modal-container-drink .close-food:hover,
+#fourth-section .modal-container-food .close-drink:hover,
+#fourth-section .modal-container-food .close-food:hover {
+  background-color: #c9002b;
+}
+
+#fourth-section .modal-container-drink .modal-drink img,
+#fourth-section .modal-container-food .modal-drink img {
+  width: 185px;
+  margin: auto 20px;
+}
+
+#fourth-section .modal-container-drink .modal-food img,
+#fourth-section .modal-container-food .modal-food img {
+  width: 280px;
+  margin: auto 0;
+}
+
+#fourth-section .modal-container-drink .modal-drink-texts,
+#fourth-section .modal-container-drink .modal-food-texts,
+#fourth-section .modal-container-food .modal-drink-texts,
+#fourth-section .modal-container-food .modal-food-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto 0;
+}
+
+#fourth-section .modal-container-drink .modal-drink-texts .drink-name,
+#fourth-section .modal-container-drink .modal-drink-texts .food-name,
+#fourth-section .modal-container-drink .modal-drink-texts h3,
+#fourth-section .modal-container-drink .modal-drink-texts h4,
+#fourth-section .modal-container-drink .modal-food-texts .drink-name,
+#fourth-section .modal-container-drink .modal-food-texts .food-name,
+#fourth-section .modal-container-drink .modal-food-texts h3,
+#fourth-section .modal-container-drink .modal-food-texts h4,
+#fourth-section .modal-container-food .modal-drink-texts .drink-name,
+#fourth-section .modal-container-food .modal-drink-texts .food-name,
+#fourth-section .modal-container-food .modal-drink-texts h3,
+#fourth-section .modal-container-food .modal-drink-texts h4,
+#fourth-section .modal-container-food .modal-food-texts .drink-name,
+#fourth-section .modal-container-food .modal-food-texts .food-name,
+#fourth-section .modal-container-food .modal-food-texts h3,
+#fourth-section .modal-container-food .modal-food-texts h4 {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#fourth-section .modal-container-drink .modal-drink-texts .drink-description,
+#fourth-section .modal-container-drink .modal-drink-texts .food-description,
+#fourth-section .modal-container-drink .modal-drink-texts p,
+#fourth-section .modal-container-drink .modal-food-texts .drink-description,
+#fourth-section .modal-container-drink .modal-food-texts .food-description,
+#fourth-section .modal-container-drink .modal-food-texts p,
+#fourth-section .modal-container-food .modal-drink-texts .drink-description,
+#fourth-section .modal-container-food .modal-drink-texts .food-description,
+#fourth-section .modal-container-food .modal-drink-texts p,
+#fourth-section .modal-container-food .modal-food-texts .drink-description,
+#fourth-section .modal-container-food .modal-food-texts .food-description,
+#fourth-section .modal-container-food .modal-food-texts p {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: left;
+  color: #004b93;
+}
+
+#fourth-section .modal-container-drink .modal-drink-texts .drink-price,
+#fourth-section .modal-container-drink .modal-drink-texts .food-price,
+#fourth-section .modal-container-drink .modal-food-texts .drink-price,
+#fourth-section .modal-container-drink .modal-food-texts .food-price,
+#fourth-section .modal-container-food .modal-drink-texts .drink-price,
+#fourth-section .modal-container-food .modal-drink-texts .food-price,
+#fourth-section .modal-container-food .modal-food-texts .drink-price,
+#fourth-section .modal-container-food .modal-food-texts .food-price {
+  color: #c9002b;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+#fourth-section .modal-container-drink .modal-drink-texts .buy-product-drink,
+#fourth-section .modal-container-drink .modal-drink-texts .buy-product-food,
+#fourth-section .modal-container-drink .modal-food-texts .buy-product-drink,
+#fourth-section .modal-container-drink .modal-food-texts .buy-product-food,
+#fourth-section .modal-container-food .modal-drink-texts .buy-product-drink,
+#fourth-section .modal-container-food .modal-drink-texts .buy-product-food,
+#fourth-section .modal-container-food .modal-food-texts .buy-product-drink,
+#fourth-section .modal-container-food .modal-food-texts .buy-product-food {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  margin: 10px 30px 0;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: #000;
+  color: #c9002b;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#fourth-section .modal-container-drink .modal-drink-texts .buy-product-drink:hover,
+#fourth-section .modal-container-drink .modal-drink-texts .buy-product-food:hover,
+#fourth-section .modal-container-drink .modal-food-texts .buy-product-drink:hover,
+#fourth-section .modal-container-drink .modal-food-texts .buy-product-food:hover,
+#fourth-section .modal-container-food .modal-drink-texts .buy-product-drink:hover,
+#fourth-section .modal-container-food .modal-drink-texts .buy-product-food:hover,
+#fourth-section .modal-container-food .modal-food-texts .buy-product-drink:hover,
+#fourth-section .modal-container-food .modal-food-texts .buy-product-food:hover {
+  background-color: #29bf12;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  #fourth-section .modal-container-drink .modal-drink img,
+  #fourth-section .modal-container-food .modal-drink img {
+    width: 110px;
+    margin: auto 15px;
+  }
+  #fourth-section .modal-container-drink .modal-food img,
+  #fourth-section .modal-container-food .modal-food img {
+    width: 165px;
+    margin: auto 0;
+  }
+  #fourth-section .modal-container-drink .modal-drink-texts .drink-name,
+  #fourth-section .modal-container-drink .modal-drink-texts .food-name,
+  #fourth-section .modal-container-drink .modal-drink-texts h3,
+  #fourth-section .modal-container-drink .modal-drink-texts h4,
+  #fourth-section .modal-container-drink .modal-food-texts .drink-name,
+  #fourth-section .modal-container-drink .modal-food-texts .food-name,
+  #fourth-section .modal-container-drink .modal-food-texts h3,
+  #fourth-section .modal-container-drink .modal-food-texts h4,
+  #fourth-section .modal-container-food .modal-drink-texts .drink-name,
+  #fourth-section .modal-container-food .modal-drink-texts .food-name,
+  #fourth-section .modal-container-food .modal-drink-texts h3,
+  #fourth-section .modal-container-food .modal-drink-texts h4,
+  #fourth-section .modal-container-food .modal-food-texts .drink-name,
+  #fourth-section .modal-container-food .modal-food-texts .food-name,
+  #fourth-section .modal-container-food .modal-food-texts h3,
+  #fourth-section .modal-container-food .modal-food-texts h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+  #fourth-section .modal-container-drink .modal-drink-texts .drink-price,
+  #fourth-section .modal-container-drink .modal-drink-texts .food-price,
+  #fourth-section .modal-container-drink .modal-food-texts .drink-price,
+  #fourth-section .modal-container-drink .modal-food-texts .food-price,
+  #fourth-section .modal-container-food .modal-drink-texts .drink-price,
+  #fourth-section .modal-container-food .modal-drink-texts .food-price,
+  #fourth-section .modal-container-food .modal-food-texts .drink-price,
+  #fourth-section .modal-container-food .modal-food-texts .food-price {
+    font-size: 1.2rem;
+  }
+  #fourth-section .modal-container-drink .modal-drink-texts .buy-product-drink,
+  #fourth-section .modal-container-drink .modal-drink-texts .buy-product-food,
+  #fourth-section .modal-container-drink .modal-food-texts .buy-product-drink,
+  #fourth-section .modal-container-drink .modal-food-texts .buy-product-food,
+  #fourth-section .modal-container-food .modal-drink-texts .buy-product-drink,
+  #fourth-section .modal-container-food .modal-drink-texts .buy-product-food,
+  #fourth-section .modal-container-food .modal-food-texts .buy-product-drink,
+  #fourth-section .modal-container-food .modal-food-texts .buy-product-food {
+    font-size: 1.1rem;
+  }
+}
+
+/* Color del background al hacer hover (hecho desde js) */
+/* Bebidas */
+.color-fondo1:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #004b93;
+}
+
+.color-fondo2:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #000;
+}
+
+.color-fondo3:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #878787;
+}
+
+.color-fondo4:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #ff8f1c;
+}
+
+.color-fondo5:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #ff8f1c;
+}
+
+.color-fondo6:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #c5142f;
+}
+
+.color-fondo7:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #878787;
+}
+
+.color-fondo8:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #d02476fa;
+}
+
+.color-fondo9:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #0065c3;
+}
+
+.color-fondo10:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #bb9339;
+}
+
+.color-fondo11:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #bebebe;
+}
+
+/* Comidas */
+.color-fondo-comida1:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #d21e29;
+}
+
+.color-fondo-comida2:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #ec6e12;
+}
+
+.color-fondo-comida3:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #e35111;
+}
+
+.color-fondo-comida4:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #6ea5be;
+}
+
+.color-fondo-comida5:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #5b002e;
+}
+
+.color-fondo-comida6:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #745036;
+}
+
+.color-fondo-comida7:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #e3c4ab;
+}
+
+.color-fondo-comida8:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #cf0619;
+}
+
+.color-fondo-comida9:hover {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background-color: #898787;
+}
+
+/* Offcanvas carrito */
+.offcanvas {
+  background-color: #000;
+}
+
+.offcanvas .offcanvas-header {
+  background-color: #004b93;
+  border-bottom: 1px solid #fff;
+}
+
+.offcanvas .offcanvas-header .cart-title {
+  color: #fff;
+  margin: 0 auto;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.offcanvas .offcanvas-body .empty-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 220px 0;
+}
+
+.offcanvas .offcanvas-body .empty-cart h4 {
+  color: #c9002b;
+}
+
+.offcanvas .offcanvas-body .product-push {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 7px;
+}
+
+.offcanvas .offcanvas-body .product-push .product-cart-img {
+  width: 70px;
+}
+
+.offcanvas .offcanvas-body .product-push .product-cart-text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offcanvas .offcanvas-body .product-push .product-cart-text .product-cart-name {
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+}
+
+.offcanvas .offcanvas-body .product-push .product-cart-text .product-cart-price {
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+}
+
+.offcanvas .offcanvas-body .product-push .product-cart-text .product-interaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.offcanvas .offcanvas-body .product-push .product-cart-text .product-interaction .more {
+  color: #005cb4;
+}
+
+.offcanvas .offcanvas-body .product-push .product-cart-text .product-interaction .product-quantity {
+  color: #fff;
+}
+
+.offcanvas .offcanvas-body .product-push .product-cart-text .product-interaction .minus {
+  color: #005cb4;
+}
+
+.offcanvas .offcanvas-body .product-push .product-cart-text .eliminate-product {
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+}
+
+.offcanvas .container-totals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px 10px 0;
+  color: #fff;
+  border-top: 1px solid black;
+}
+
+.offcanvas .container-totals p {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 6px;
+  font-weight: 500;
+}
+
+.offcanvas .container-totals p .total-products,
+.offcanvas .container-totals p .total-price {
+  font-weight: 700;
+  color: #fff;
+}
+
+.offcanvas .container-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offcanvas .container-buttons .reset-cart {
+  margin: 0 auto;
+  color: #fff;
+  background: #004b93;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.offcanvas .container-buttons .reset-cart:hover {
+  background-color: #c9002b;
+}
+
+.offcanvas .container-buttons .finish-buy {
+  margin: 0 auto;
+  color: #fff;
+  background: #004b93;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.offcanvas .container-buttons .finish-buy:hover {
+  background-color: #29bf12;
+}
+
+/* Formulario de compra */
+#first-section-form {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 54, 53, 0.4)), to(rgba(34, 34, 71, 0.6))), url(/img/fondo-formulario.webp);
+  background: linear-gradient(rgba(49, 54, 53, 0.4), rgba(34, 34, 71, 0.6)), url(/img/fondo-formulario.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  padding: 130px 0 50px;
+  font-family: "Kanit", sans-serif;
+}
+
+#first-section-form .fondo-formulario {
+  background-color: #000;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 7px;
+}
+
+#first-section-form .fondo-formulario h2 {
+  text-transform: uppercase;
+  color: #c9002b;
+}
+
+#first-section-form .fondo-formulario input {
+  border-radius: 4px;
+}
+
+#first-section-form .fondo-formulario select {
+  width: 225px;
+  border-radius: 3px;
+}
+
+#first-section-form .fondo-formulario .buy {
+  background-color: #004b93;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#first-section-form .fondo-formulario .buy:hover {
+  background-color: #29bf12;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  .first-section p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .first-section p h2,
+  .first-section p h3 {
+    font-size: 1.5rem;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #050823), color-stop(91%, #d20c1c));
+    background: linear-gradient(to top, #050823 10%, #d20c1c 91%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Preloader */
+.loader {
+  background: black;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+}
+
+.logo-efect {
+  -webkit-animation: rotate 0.6s infinite linear;
+          animation: rotate 0.6s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */

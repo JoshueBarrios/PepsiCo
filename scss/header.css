@@ -1,0 +1,185 @@
+/* Variables */
+header {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.038438)), to(rgba(0, 0, 0, 0.842174)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.038438) 0%, rgba(0, 0, 0, 0.842174) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 22px 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  /* Underline From Left */
+}
+
+header img {
+  width: 150px;
+  margin: 9px 25px 0;
+  -webkit-filter: drop-shadow(0 0 0.9rem #000);
+          filter: drop-shadow(0 0 0.9rem #000);
+}
+
+header .navegation {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navegation .logo-header-responsive {
+  display: none;
+}
+
+header .navegation li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .navegation li a:hover {
+  color: #005cb4;
+}
+
+header .navegation .cart-shop {
+  font-size: 1.3rem;
+  color: #c9002b;
+  cursor: pointer;
+  position: relative;
+}
+
+header .navegation .cart-shop p {
+  position: absolute;
+  font-family: "Kanit", sans-serif;
+  top: -6px;
+  left: 5px;
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+}
+
+header .btn-close-open {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  header .btn-close-open {
+    display: block;
+  }
+  header .btn-close-open .menu-btn {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  header .navegation {
+    position: fixed;
+    background-color: #004b93;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    padding: 73px 40px;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .navegation .logo-header-responsive {
+    width: 150px;
+    margin: 0 25px;
+    -webkit-filter: drop-shadow(0.25rem -0.1rem #c9002b);
+            filter: drop-shadow(0.25rem -0.1rem #c9002b);
+    display: block;
+  }
+  header .navegation li {
+    margin: 30px 0;
+  }
+  header .navegation .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 20px 10px;
+    font-size: 1.5rem;
+    color: #c9002b;
+  }
+  header .active {
+    left: 0;
+  }
+}
+
+header .modal-backdrop {
+  z-index: 1;
+}
+
+header .hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
+}
+
+header .hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #c9002b;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+header .hvr-underline-from-left:hover:before,
+header .hvr-underline-from-left:focus:before,
+header .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+/* Se activa al hacer scroll*/
+.scroll-down-header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: #004b93;
+  -webkit-box-shadow: 0 6px 30px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 30px 12px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.scroll-down-logo {
+  width: 150px;
+  margin: 9px 25px 0;
+  -webkit-filter: drop-shadow(0 0 0.3rem #c9002b);
+          filter: drop-shadow(0 0 0.3rem #c9002b);
+}
+/*# sourceMappingURL=header.css.map */
